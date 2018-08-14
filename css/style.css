@@ -1,0 +1,161 @@
+#setting-error-tgmpa{display: none;}
+#setting-error-tgmpa>.updated settings-error notice is-dismissible, .update-nag, .updated { display: none; }
+
+.widefat {width: auto;}
+.ss-list-width {min-width:10%}
+.ss-form-width {width:100%}
+.ss-th-width {width:25%}
+.ss-field-width {width:75%}
+
+.inc-column-segment{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1%;
+}
+
+.inc-column-segment h3,small{
+  display: inline-block;
+}
+
+.inc-list-values{
+  border-left: 2px solid #9b9ea3;
+  padding-top: 5px;
+  padding-left: 10px;
+  background-color: #c6cbd3;
+	height: 250px;
+	overflow: auto;
+}
+
+.actions{
+  margin-bottom: 1em;
+}
+
+.actions a{
+  background-color: #0073aa;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  line-height: 2.5;
+}
+
+.actions a:hover {
+  background-color: #00a0d2;
+}
+
+.actions a span{
+  margin-right: 5px;
+}
+
+.cancelbtn{
+    margin-left: 1em;
+    line-height: 2;
+}
+
+.update-action{
+  margin-top: 2.5em;
+  width: 30%;
+  text-align: center;
+}
+
+.update-action a{
+    background-color: #ff9c1c;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.update-action a:hover{
+  background-color:#e08918;
+}
+
+.update-action a span{
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.message-segment{
+  width: 30%;
+  background-color: #cec0b3;
+  padding: 0.5em;
+  border: solid 2px #ada298;
+}
+
+.lastupdate{
+  width: 30%;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 1.5em;
+}
+
+.inc-log{
+  font-family: Consolas,"courier new";
+  width: 80%;
+  height: 700px;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.dellog{
+  padding: 0.5em;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dellog:hover{
+  color:white;
+  text-decoration: none;
+  background-color: rgba(255,0,0,0.8);
+}
+
+
+
+/* LOADING */
+
+#inc-loading{
+	display:none;
+  background-color: rgba(0,0,0,0.5);
+  width:  100%;
+  height:  100%;
+  position:  absolute;
+  top: 0;
+  left:  0;
+}
+
+.inc-anim-load{
+	top: 45%;
+  position: absolute;
+  left: 40%;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(0.75rem);
+  }
+}
+
+.dot {
+  background: white;
+}
+.dot, .dot:after {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  animation: a 1.5s calc(((var(--i) + var(--o, 0))/var(--n) - 1)*1.5s) infinite;
+}
+.dot:after {
+  --o: 1;
+  background: rgba(0,0,0,0.5);
+  content: "";
+}
+
+@keyframes a {
+  0%, 50% {
+    transform: scale(0);
+  }
+}
