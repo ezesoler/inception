@@ -66,6 +66,7 @@ if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['domai
 				$_SESSION['inc_username'] = $_POST['username'];
 				$_SESSION['inc_domain'] = $_POST['domain'];
 				$_SESSION['inc_name'] = $json["Nombre"];
+				$_SESSION['inc_emp_id'] = $json["emp_id"];
 
 				$_SESSION['cue_id'] = $json["cue_id"];
 				$_SESSION['sar_id'] = $json["sar_id"];

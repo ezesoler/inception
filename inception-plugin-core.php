@@ -15,6 +15,7 @@ if (!class_exists('Inception_plugin')){
 			include_once('classes/inception-plugin-meta-box.php');
 			include_once('classes/inception-plugin-filter.php');
 			include_once('classes/inception-plugin-login.php');
+			include_once('classes/inception-plugin-shortcodes.php');
 			include_once('classes/inception-plugin-log.php');
 
 		   	if (is_admin()){
@@ -51,4 +52,5 @@ if (!class_exists('Inception_plugin')){
 $GLOBALS['inception_plugin'] = new Inception_plugin();
 $GLOBALS['inception_plugin_meta_box'] = new InceptionPlugin_MetaBox();
 $GLOBALS['inception_plugin_login'] = new InceptionPlugin_Login();
+$GLOBALS['inception_plugin_shortcodes'] = new InceptionPlugin_Shortcodes();
 $GLOBALS['inception_plugin_filter'] = new InceptionPlugin_Filter();

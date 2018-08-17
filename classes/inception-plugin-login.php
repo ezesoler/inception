@@ -124,6 +124,7 @@ class InceptionPlugin_Login
                     }else{
                        header.prepend( '<div class="inc-loginbar"><a id="inc-btn-loginform" href="?page_id=<?php echo ID_PAGE_LOGIN; ?>"><span class="inc-icon-login icon icon-user3"></span>LOGIN</a></div>' ); 
                     }
+                    jQuery(".content_body").css("margin-top","153px");
                 });
             }
         </script>
